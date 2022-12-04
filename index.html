@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@300;400;600;700&display=swap'); 
+
+    *{
+      box-sizing: border-box;
+      
+    }
+
+    body{
+      display: grid;
+      grid-template-columns: auto;
+      background-color: hsl(217, 54%, 11%);
+      color: hsl(0, 0%, 100%);
+      font-family: 'Outfit' , sans-serif;
+      
+      
+    }
+    .container
+    {
+      display: flex;
+      flex-direction: column;
+      width: 375px;
+      margin: auto;
+      box-shadow: 0 4px 8px 0 rgba(0 , 0 , 0 ,0.2);
+      margin-top: 50%;
+      background-color: hsl(216, 50%, 16%);
+      padding: 20px;
+      border-radius: 20px;
+      
+
+    }
+    .container2
+    {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid hsl(215, 51%, 70%);
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+      flex-direction: row;
+      
+      
+      
+
+    }
+
+    .etherium
+    {
+      display: flex;
+      align-items: center;
+      color: hsl(178, 100%, 50%);
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    .clock
+    {
+      display: flex;
+      align-items: center;
+      color:  hsl(215, 51%, 70%);
+      font-size: 14px;
+
+    }
+    
+    
+     .clock 
+    {
+      text-align: right;
+    }
+    .photu
+    {
+      border-radius: 40px;
+      margin: -20px;
+      padding: 30px;
+      
+      
+    }
+    .icon
+    {
+      display: flex;
+
+    }
+    .name
+    {
+      margin-top: 10%;
+      margin-left: 7%;
+    }
+    p{
+      font-size: 18px;
+      color:  hsl(215, 51%, 70%);
+    }
+    b{
+      color: hsl(0, 0%, 100%);
+    }
+    @media only screen and (max-width:375px){
+  .container
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+   
+  </style>
+</head>
+<body>
+<div class="container">
+  <img class="photu" src="./images/image-equilibrium.jpg" alt="error" width="375px">
+  <h1>Equilibrium #3429</h1>
+  <p>Our Equilibrium collection promotes balance and calm</p>
+
+  
+  <div class="container2">
+  
+     <div class="etherium">
+
+        <img src="./images/icon-ethereum.svg" alt=""> 0.041ETH
+     
+     </div>
+      <div class="clock">
+
+        <img src="./images/icon-clock.svg" alt="">3 days left
+      </div>
+      
+    
+    </div>
+    <div class="icon">
+      <img src="./images/image-avatar.png" alt="" width="20%">
+      <div class="name">
+        <p> Creation of <b>Jules wyveren</b></p>
+       
+      </div> 
+    </div>
+  
+
+</div>
+
+</body>
+</html>
